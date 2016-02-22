@@ -1,5 +1,42 @@
 # Ignore everything
 *
-# Except these
-!.gitignore
-!README.md
+
+# Except folders
+home/*
+!home
+home/rails/*
+!home/rails
+home/rails/source/*
+!home/rails/source
+home/rails/source/config/*
+!home/rails/source/config
+
+etc/*
+!etc
+etc/default/*
+!etc/default
+etc/nginx/*
+!etc/nginx
+etc/nginx/sites-enabled/*
+!etc/nginx/sites-enabled
+etc/nginx/sites-available/*
+!etc/nginx/sites-available
+
+usr/*
+!usr
+usr/local/*
+!usr/local
+usr/local/etc/*
+!usr/local/etc
+
+# Except files
+!/.gitignore
+!/README.md
+
+!home/rails/source/config/database.yml
+!home/rails/source/config/local_variables.example.rb
+!etc/default/unicorn
+!etc/nginx/sites-enabled/rails
+!etc/nginx/sites-available/rails.example
+!etc/nginx/sites-available/rails-ssl.example
+!usr/local/etc/le-renew-webroot.ini.example
