@@ -2,6 +2,13 @@
 *
 
 # Except folders
+root/*
+!root
+root/.vim/*
+!root/.vim
+root/.vim/colors/*
+!root/.vim/colors
+
 home/*
 !home
 home/rails/*
@@ -33,6 +40,9 @@ usr/local/etc/*
 !/.gitignore
 !/README.md
 
+!root/.vimrc
+!root/.vimrc.bundles
+!root/.vim/colors/tomify.vim
 !home/rails/source/config/database.yml
 !home/rails/source/config/local_variables.example.rb
 !etc/default/unicorn
